@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="style.css">
+    <title>EcoFashion-form</title>
+</head>
+
+<body>
+    <div class="block-img-form">
+        <img src="./images/ffdpgdd.png" alt="">
+    </div>
+    <div class="wrap">
+        <div class="block-in-forma">
+            <h1 class="for-form">EcoFashion 1968</h1>
+            <img src="./images/wrap-for-form.png" alt="">
+        </div>
+
+        <div class="forma">
+
+            <form action="./index.html">
+                <h2>Ласкаво просимо, пані та панове.</h2>
+                <input type="text" name="name" placeholder="Вкажіть ім'я..." pattern="^[a-zA-Zа-яА-ЯёЁіІїЇєЄґҐ0-9 ]+$" required>
+                <input type="tel" name="phone" id="phone" placeholder="Вкажіть номер тулефону..." pattern="^(\+380|0)\d{9}$" required>
+                <input type="password" name="pass" id="pass" placeholder="Вкажіть пароль..." pattern="^[a-zA-Z0-9]{4,8}$" required>
+                <input type="email" name="email" id="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="Вкажіть вашу пошту..." required>
+                <input class="submitt" type="submit" value="НАДІСЛАТИ">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

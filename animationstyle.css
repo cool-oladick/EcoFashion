@@ -1,0 +1,122 @@
+
+@keyframes fill-progress{
+    to{
+        width: 100%;
+    }
+}
+
+@keyframes nav-animation{
+    0%{
+        opacity: 0;
+        
+    }
+    100%{
+        opacity: 1;
+        height: 120px;
+        background: #d9d9d9;
+        box-shadow: 0 5px 20px #201c1c;
+    }
+}
+
+@keyframes pageh1 {
+    from {
+        opacity: 0;
+        transform: translate(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+
+}
+@keyframes block-p{
+    from {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes block-img{
+    from {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0);
+        transform: rotate(20deg);
+    }
+}
+@keyframes block-butt{
+    from {
+        opacity: 0;
+        transform: translateY(90px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes forbox3{
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+}
+@keyframes fade-in {
+    from{
+        translate: -25vw;
+        opacity: 0;
+    }
+}
+
+@keyframes h2-anim-5{
+    0%{
+        opacity: 0;
+        translate: -100px;
+    }
+    100%{
+        opacity: 1;
+        translate: 0;
+    }
+}
+@keyframes h2-anim1-3{
+    0%{
+        opacity: 0;
+        transform: translate(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes img-p-anim-3{
+    0%{
+        opacity: 0.6;
+        transform: translateX(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes content-sell{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
