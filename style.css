@@ -276,6 +276,7 @@ nav li {
 
 .wrap-box p {
     padding: 20px;
+    line-height: 1.5;
 }
 
 .decoration-2 {
@@ -698,7 +699,7 @@ td {
 }
 
 @media screen and (max-width: 640px) {
-    #menu ul {
+    /* #menu ul {
         position: absolute;
         left: 350px;
     }
@@ -788,14 +789,24 @@ td {
         backdrop-filter: blur(10px);
         border-radius: 16px;
         border: 1px solid #fff;
-    }
+    } */
 
     #header p {
         font-size: 20px;
     }
 
+    .menu {
+        position: relative;
+        left: 50px;
+        top: 35px;
+    }
+
     .menu a {
-        color: #000;
+        font-size: 9px;
+    }
+
+    .menu li {
+        margin: 6px;
     }
 
     .box-contacts {
@@ -885,18 +896,37 @@ td {
     }
 }
 
+@media screen and (max-width:500px) {
+    .menu {
+        position: relative;
+        top: 70px;
+        left: 20px;
+    }
+
+    .menu a {
+        font-size: 9px;
+    }
+
+    .menu li {
+        margin: 6px;
+    }
+}
+
 @media screen and (max-width: 450px) {
     [class^="img-contents"] img {
         width: 242px;
         height: 272px;
     }
+
     .box-content {
         width: 228px;
         height: 330px;
     }
+
     .box-content hr {
         width: 200px;
     }
+
     .box-6 h2 {
         width: auto;
         left: -8px;
@@ -904,7 +934,14 @@ td {
         font-size: 20px;
         padding: 96px 0 0 20px;
     }
+
     .footer img {
         padding: 0;
     }
+
+    table tr {
+        margin: 0 10px 0 0;
+    }
+
+
 }
