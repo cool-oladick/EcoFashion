@@ -336,7 +336,7 @@ nav li {
 
 .box-content {
     width: 330px;
-    height: 430px;
+    height: 465px;
     border: 1px solid #dbd6d3;
     border-radius: 16px;
     box-shadow: 0 5px 10px #dbd6d32a;
@@ -363,7 +363,26 @@ nav li {
     text-align: center;
     transform: translate(-6px);
 }
-
+.actions {
+    position: relative;
+    top: -50px;
+    text-align: center;
+}
+.add-to-cart {
+    color: #fff;
+    letter-spacing: 1px;
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+    border: 1px solid #FFF;
+    border-radius: 6px;
+    padding: 4px 50px;
+    transition: 0.5s;
+    box-shadow: 0 5px 40px rgba(255, 255, 255, 0.152);
+}
+.add-to-cart:hover {
+    background: rgba(255, 255, 255, 0.082);
+    padding: 6px 55px;
+}
 /* *************************************** */
 
 .box-7 {
@@ -920,7 +939,7 @@ td {
 
     .box-content {
         width: 228px;
-        height: 330px;
+        height: 365px;
     }
 
     .box-content hr {
