@@ -46,7 +46,7 @@ nav {
 
 #img1 {
     position: relative;
-    top: 10px;
+    right: 50px;
     width: 35px;
 }
 
@@ -122,6 +122,13 @@ nav.scrolled #img1 {
     filter: invert(1);
 }
 
+nav .switch {
+    transition: filter 0.5s;
+    filter: invert(0);
+}
+nav.scrolled .switch {
+    filter: invert(1);
+}
 .progres-bar {
     position: fixed;
     top: 0;

@@ -10,11 +10,60 @@
     <!-- <link rel="stylesheet" href="adaptiv.css"> -->
     <title>EcoFashion</title>
 </head>
+<style>
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+        top: 45px;
+        margin-left: 20px;
+    }
+
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        transition: 0.4s;
+        border-radius: 34px;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        transition: 0.4s;
+        border-radius: 50%;
+    }
+
+    input:checked+.slider {
+        background-color: #1f1f1f;
+    }
+
+    input:checked+.slider:before {
+        transform: translateX(26px);
+    }
+</style>
 
 <body>
     <div class="progres-bar"></div>
     <nav>
-        <a href="./index.html" class="logo"><img src="./images/icon.png" alt="" class="icon"/><strong>EcoFashion</strong></a>
+        <a href="./index.html" class="logo"><img src="./images/icon.png" alt=""
+                class="icon" /><strong>EcoFashion</strong></a>
         <div id="menu">
             <input type="checkbox" id="menu_toggle">
             <label for="menu_toggle" class="menu_btn"><span></span></label>
@@ -34,11 +83,16 @@
                 <li>
                     <a href="#contact"><em>КОНТАКТИ</em></a>
                 </li>
-                <img id="img1" src="https://img.icons8.com/?size=100&id=JARydttrNTU2&format=png&color=000000" /> <button id="theme"
+                <!--  <button id="theme"
                     type="button" onclick="changeCSS()"> theme</button>
-                <script src="script.js"></script>
+                -->
             </ul>
-
+            <label class="switch">
+                <img id="img1" src="https://img.icons8.com/?size=100&id=Wdnu-edbShJS&format=png&color=000000" />
+                <input type="checkbox" id="themeToggle" onclick="changeCSS()" />
+                <span class="slider"></span>
+                <script src="script.js"></script> 
+            </label>
         </div>
     </nav>
 
