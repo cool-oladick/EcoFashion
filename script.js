@@ -11,7 +11,21 @@ function changeCSS() {
 
     var img1 = document.getElementById('img1');
     var isrc = img1.getAttribute('src');
-    if (/fl2\.jpg$/.test(isrc)) img1.setAttribute('src', 'https://img.icons8.com/?size=100&id=JARydttrNTU2&format=png&color=000000');
-    else img1.setAttribute('src', 'https://img.icons8.com/?size=100&id=60002&format=png&color=000000'); 
-  }
-  
+    if ("style-light.css"  == path) {
+        img1.setAttribute('src', 'https://img.icons8.com/?size=100&id=JARydttrNTU2&format=png&color=000000');
+    }
+    else {
+        img1.setAttribute('src', 'https://img.icons8.com/?size=100&id=60002&format=png&color=000000');
+
+    }
+}
+
+window.addEventListener('scroll', function () {
+    const nav = document.querySelector('nav');
+    const links = nav.querySelectorAll('a');
+    if (window.scrollY > 150) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
