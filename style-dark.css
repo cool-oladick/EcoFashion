@@ -171,6 +171,8 @@ nav.scrolled .switch {
     animation: pageh1 2s ease-out forwards;
     animation-duration: 2s;
     animation-delay: 3s;
+    mix-blend-mode: difference;
+
 }
 
 .block-p {
@@ -189,7 +191,7 @@ nav.scrolled .switch {
     position: absolute;
     z-index: -4;
     right: 100px;
-    top: 40px;
+    top: 200px;
     opacity: 0;
     animation: block-img 2s 1s ease-out forwards;
 }
@@ -676,16 +678,16 @@ td {
         position: relative;
         width: 50px;
         height: 24px;
-        top: 45px;
+        top: 65px;
+
     }
 
     .slider:before {
         height: 16px;
         width: 16px;
     }
-    #img1 {
-        width: 25px;
-    }
+
+
 }
 
 @media screen and (max-width: 820px) {
@@ -784,6 +786,23 @@ td {
         width: 100%;
 
     }
+
+    .slider {
+        position: absolute !important;
+        top: 10px !important;
+    }
+
+    .slider:before {
+        height: 16px !important;
+        width: 16px !important;
+    }
+    #img1 {
+        width: 25px;
+        top: 10px;
+    }
+    nav ul.menu li a {
+        z-index: 1;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -802,6 +821,7 @@ td {
     nav ul.menu li a {
         font-size: 8px;
     }
+
     nav ul.menu {
         position: relative;
         top: 32px;
@@ -911,6 +931,7 @@ td {
         position: relative;
     }
 }
+
 @media screen and (max-width: 600px) {
     ul.menu {
         visibility: hidden;
@@ -928,7 +949,7 @@ td {
 
     .menu_btn {
         position: absolute;
-        top: 40px;
+        top: 65px;
         right: 0;
         width: 32px;
         height: 32px;
@@ -987,6 +1008,7 @@ td {
         transition: all 0.25s;
     }
 }
+
 @media screen and (max-width:500px) {
     .menu {
         position: relative;
@@ -1034,5 +1056,22 @@ td {
         margin: 0 10px 0 0;
     }
 
+    h1.hed-h1-1,
+    h1.hed-h1-2,
+    h1.hed-h1-3 {
+        font-size: 40px;
+        left: 300px;
+    }
+
+}
+
+@media screen and (max-width: 395px) {
+
+    h1.hed-h1-1,
+    h1.hed-h1-2,
+    h1.hed-h1-3 {
+        font-size: 30px;
+        left: 300px;
+    }
 
 }

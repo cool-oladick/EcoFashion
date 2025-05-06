@@ -198,7 +198,7 @@ nav.scrolled .switch {
     position: absolute;
     z-index: -4;
     right: 100px;
-    top: 40px;
+    top: 200px;
     opacity: 0;
     animation: block-img 2s 1s ease-out forwards;
 }
@@ -255,7 +255,7 @@ nav.scrolled .switch {
 .box-2 h4 {
     width: 400px;
     font-size: 30px;
-    color: #000;
+    color: #fff;
 }
 
 /* ************************** */
@@ -807,6 +807,22 @@ td {
         width: 100%;
 
     }
+    .slider {
+        position: absolute !important;
+        top: 10px !important;
+    }
+
+    .slider:before {
+        height: 16px !important;
+        width: 16px !important;
+    }
+    #img1 {
+        width: 25px;
+        top: 10px;
+    }
+    nav ul.menu li a {
+        z-index: 1;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -878,10 +894,6 @@ td {
         right: 20px;
     }
 
-    .home-page h1 {
-        mix-blend-mode: difference;
-    }
-
     .box-2 h2,
     .box-3 h2,
     .box-5 h2,
@@ -951,7 +963,7 @@ td {
 
     .menu_btn {
         position: absolute;
-        top: 40px;
+        top: 65px;
         right: 0;
         width: 32px;
         height: 32px;
@@ -1057,5 +1069,16 @@ td {
         margin: 0 10px 0 0;
     }
 
+
+}
+
+@media screen and (max-width: 395px) {
+
+    h1.hed-h1-1,
+    h1.hed-h1-2,
+    h1.hed-h1-3 {
+        font-size: 30px;
+        left: 300px;
+    }
 
 }
