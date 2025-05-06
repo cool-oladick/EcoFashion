@@ -960,7 +960,10 @@ td {
         box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
         display: none;
     }
+    ul.menu a {
+        color: #000;
 
+    }
     .menu_btn {
         position: absolute;
         top: 65px;
